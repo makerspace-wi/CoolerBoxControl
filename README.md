@@ -54,7 +54,8 @@ Der Controller 'published' alle 15 Sekunden per MQTT folgende Werte in json-Form
 "eeprom_use":3,<br>
 "last TS":"21.07.24 - 16:58:29"}<br>
 <br>
-<br>
-unter Topic cooler/doors wird der aktuelle Status der Verschlusstüren und der Alarmzustand dargestellt.<br>
-Auch lassen sich verschiedene Betriebsparameter per MQTT setzen.
+Unter Topic cooler/doors wird der aktuelle Status der Verschlusstüren und der Alarmzustand dargestellt.<br>
+Auch lassen sich verschiedene Betriebsparameter (Alarm-Delay, analog Level, wipe EEPROm und enable_flag) per MQTT setzen.
+<br>Zusätzlich gibt es einen Dallas 1-Wire Temperatursensor, dieser soll in die Kunststoffablaufkappe montiert werden, um die Kühlboxinnentemperatur zu erfassen.
+<br>Der Programm-Code kann per OTA (Over the air) auch aus der Ferne geändert aufgespielt werden.
 

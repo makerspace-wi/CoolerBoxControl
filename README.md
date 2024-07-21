@@ -22,7 +22,7 @@ Läuft der Timer ab, ohne dass beide Schieber wieder zurück in ihrer 'geschloss
 Sobald beide Schieber wieder geschlossen sind, stoppt die Alamierung.
 <br><br>
 ## Technische Details
-Der Controller für die Getränkekühlbox ist ein ESP8266 D1 mini und wir verwenden die folgenden Libraries:
+Der Controller für die Getränkekühlbox ist ein ESP8266 D1 mini mit folgenden Libraries:
 #include <ESP8266WiFi.h>
 #include <TaskScheduler.h>
 #include <WiFiClient.h>
@@ -36,7 +36,6 @@ Der Controller für die Getränkekühlbox ist ein ESP8266 D1 mini und wir verwen
 #include <ArduinoJson.h>
 #include <WiFiUdp.h>
 #include "NTP.h"
-#include "WebSerial.h"
 
 Nach dem Einschalten versucht der Controller sich mit dem lokalen Netzwerk zu verbinden und schaltet bei Erfolg die blaue LED auf dem D1 mini Board ein.
 Per NTP holt sich der Controller die aktuelle Zeit, das aktuelle Datum und zeigt diese dann auch per MQTT im Topic cooler/status an.
@@ -56,6 +55,6 @@ Der Controller 'published' alle 15 Sekunden per MQTT folgende Werte in json-Form
 "last TS":"21.07.24 - 16:58:29"}<br>
 <br>
 <br>
-unter Topic cooler/doors wird der aktuelle Status der Verschlusstüren und der Alarmzustand 
-Auch lassen sich Betriebsparameter per MQTT setzen
+unter Topic cooler/doors wird der aktuelle Status der Verschlusstüren und der Alarmzustand dargestellt.<br>
+Auch lassen sich verschiedene Betriebsparameter per MQTT setzen.
 

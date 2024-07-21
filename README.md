@@ -1,5 +1,5 @@
 # CoolerBoxControl
-Unsere Getränkekühlbox stand neulich mal wieder längere Zeit offen - ein Zustand der auf keinen Fall passieren darf, denn neben nicht gekühlten Getränken ergibt sich dabei ein enormer Stromverbrauch, da der Kühlkompressort ständig läuft.
+Unsere Getränkekühlbox stand neulich mal wieder längere Zeit offen - ein Zustand der auf jeden Fall zu vermeiden ist, denn neben nicht gekühlten Getränken ergibt sich dabei ein enormer Stromverbrauch, da der Kühlkompressort ständig läuft.
 <br>
 Das Makerspace Technik-Team hat sich dazu Gedanken gemacht und wartet mit folgender Lösung auf:
 Die Kühlbox wird durch 2 übereinanderliegende Schiebeelemente, von denen eins ganz nach links, das andere ganz rechts (oder umgekehrt) geschoben werden muss, damit die Truhe geschlossen ist.

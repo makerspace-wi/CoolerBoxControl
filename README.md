@@ -16,5 +16,6 @@ Beide Sensoren sind an einem 4-poligen Flachbahnkabel angeschlossen und der Plan
 <br> 
 Als Prozessor wird ein ESP8266 D1 mini Board verwendet. In der Haupt-Task wird jede Sekunde abgefragt, ob ein (oder beide) Schieber geöffnet wurden. Wenn dem so ist, wird eine Timer gestartet (momentan 15 Sekunden).
 Läuft der Timer ab, ohne dass beide Schieber wieder zurück in ihrer 'geschlossen' Position sind, wird ein Licht- und Tonsignal ausgelöst, um Anwesende hinzuweisen, dass die Getränkebox zu schließen ist.
+<br>
 <img src="https://github.com/user-attachments/assets/a8ea42ed-357d-41d9-a7d8-f03a35322d14" width="400">
-
+<br>

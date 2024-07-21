@@ -5,4 +5,6 @@ Das Makerspace Technik-Team hat sich dazu Gedanken gemacht und wartet mit folgen
 Die Kühlbox wird durch 2 übereinanderliegende Schiebeelemente, von denen eins ganz nach links, das andere ganz rechts (oder umgekehrt) geschoben werden muss, da mit die Truhe geschlossen ist.
 
 ![20240713_182432](https://github.com/user-attachments/assets/3b224a5f-eef6-48cb-ab57-e48e8039918d)
-<img src="https://github.com/user-attachments/assets/3b224a5f-eef6-48cb-ab57-e48e8039918d.jpg" width="400">
+<img src="https://github.com/user-attachments/assets/3b224a5f-eef6-48cb-ab57-e48e8039918d" width="400">
+
+<img src="https://github.com/makerspace-wi/Garage-Control/assets/42463588/d775f473-c52c-4a3c-be16-ce14e2962205" width="500px">

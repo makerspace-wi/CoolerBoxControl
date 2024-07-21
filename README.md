@@ -19,6 +19,6 @@ Läuft der Timer ab, ohne dass beide Schieber wieder zurück in ihrer 'geschloss
 <br>
 <img src="https://github.com/user-attachments/assets/a8ea42ed-357d-41d9-a7d8-f03a35322d14" width="400">
 <br>
-Sobald beide Schieber wieder geschlossen sind, stoppt auch die Alamierung.
+Sobald beide Schieber wieder geschlossen sind, stoppt die Alamierung.
 <br><br>
 ## Technische Details

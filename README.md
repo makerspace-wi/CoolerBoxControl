@@ -22,20 +22,20 @@ Läuft der Timer ab, ohne dass beide Schieber wieder zurück in ihrer 'geschloss
 Sobald beide Schieber wieder geschlossen sind, stoppt die Alamierung.
 <br><br>
 ## Technische Details
-Der Controller für die Getränkekühlbox ist ein ESP8266 D1 mini mit folgenden Libraries:
-#include <ESP8266WiFi.h>
-#include <TaskScheduler.h>
-#include <WiFiClient.h>
-#include <PubSubClient.h>
-#include <ESPAsyncWebServer.h>
-#include <ElegantOTA.h>
-#include <ESPAsyncTCP.h>
-#include <OneWire.h>
-#include <DallasTemperature.h>
-#include <ESP_EEPROM.h>
-#include <ArduinoJson.h>
-#include <WiFiUdp.h>
-#include "NTP.h"
+Der Controller für die Getränkekühlbox ist ein ESP8266 D1 mini mit folgenden Libraries:<br>
+#include <ESP8266WiFi.h><br>
+#include <TaskScheduler.h><br>
+#include <WiFiClient.h><br>
+#include <PubSubClient.h><br>
+#include <ESPAsyncWebServer.h><br>
+#include <ElegantOTA.h><br>
+#include <ESPAsyncTCP.h><br>
+#include <OneWire.h><br>
+#include <DallasTemperature.h><br>
+#include <ESP_EEPROM.h><br>
+#include <ArduinoJson.h><br>
+#include <WiFiUdp.h><br>
+#include "NTP.h"<br><br>
 
 Nach dem Einschalten versucht der Controller sich mit dem lokalen Netzwerk zu verbinden und schaltet bei Erfolg die blaue LED auf dem D1 mini Board ein.
 Per NTP holt sich der Controller die aktuelle Zeit, das aktuelle Datum und zeigt diese dann auch per MQTT im Topic cooler/status an.

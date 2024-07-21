@@ -41,16 +41,16 @@ Der Controller für die Getränkekühlbox ist ein ESP8266 D1 mini und wir verwen
 Nach dem Einschalten versucht sich der Controller mit dem lokalen Netzwerk zu verbinden und schaltet die blaue LED auf dem D1 mini board ein.
 Per NTP holt sich der Controller die aktuelle Zeit, das aktuelle Datum und zeigt diese dann auch per MQTT im Topic cooler/status an.
 Wie auch bei vielen anderen Projekten im Makerspace nutzen wir den Task/Scheduler (a lightweight implementation of cooperative multitasking), da wir damit sehr gute Erfahrung gemacht haben. 
-Der Controller 'published' alle 15 Sekunden per MQTT folgende Werte in json-Format:
-{"revision":"0.8_240721",
-"enable_flag":1,
-"ip":"192.168.1.38",
-"rssi":-73,
-"cnt_reconnect":0,
-"temp":27.875,
-"client":"cooler_1",
-"alarm_delay":15,
-"analog_level":120,
-"ADC_Read":205,
-"eeprom_use":3,
-"last TS":"21.07.24 - 16:58:29"}
+Der Controller 'published' alle 15 Sekunden per MQTT folgende Werte in json-Format:<br>
+{"revision":"0.8_240721",<br>
+"enable_flag":1,<br>
+"ip":"192.168.1.38",<br>
+"rssi":-73,<br>
+"cnt_reconnect":0,<br>
+"temp":27.875,<br>
+"client":"cooler_1",<br>
+"alarm_delay":15,<br>
+"analog_level":120,<br>
+"ADC_Read":205,<br>
+"eeprom_use":3,<br>
+"last TS":"21.07.24 - 16:58:29"}<br>

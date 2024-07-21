@@ -11,6 +11,7 @@ Unser Ansatz sind 2 Infrarot Opto Reflex Sensoren, die links und rechts hinten k
 <img src="https://github.com/user-attachments/assets/9c6b663d-930d-407b-ab10-18039a858a7a" width="300">
 <img src="https://github.com/user-attachments/assets/f546fa4a-1c9c-4487-b759-9f8167c2bc52" width="300">
 <img src="https://github.com/user-attachments/assets/7d660f90-6e68-4c0d-babe-1eb549d3b7fe" width="300">
+<br>
 Beide Sensoren sind an einem 4-poligen Flachbahnkabel angeschlossen und der Plan ist, dieses so in den Laufschienen nach aussen zu führen (einkleben mit doppelseitigem Klebeband), dass die Schieber nicht behindert werden.
 <br> 
 Als Prozessor wird ein ESP8266 D1 mini Board verwendet. In der Haupt-Task wird jede Sekunde abgefragt, ob ein (oder beide) Schieber geöffnet wurden. Wenn dem so ist, wird eine Timer gestartet (momentan 15 Sekunden).

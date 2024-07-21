@@ -22,3 +22,35 @@ Läuft der Timer ab, ohne dass beide Schieber wieder zurück in ihrer 'geschloss
 Sobald beide Schieber wieder geschlossen sind, stoppt die Alamierung.
 <br><br>
 ## Technische Details
+Der Controller für die Getränkekühlbox ist ein ESP8266 D1 mini und wir verwenden die folgenden Libraries:
+#include <ESP8266WiFi.h>
+#include <TaskScheduler.h>
+#include <WiFiClient.h>
+#include <PubSubClient.h>
+#include <ESPAsyncWebServer.h>
+#include <ElegantOTA.h>
+#include <ESPAsyncTCP.h>
+#include <OneWire.h>
+#include <DallasTemperature.h>
+#include <ESP_EEPROM.h>
+#include <ArduinoJson.h>
+#include <WiFiUdp.h>
+#include "NTP.h"
+#include "WebSerial.h"
+
+Nach dem Einschalten versucht sich der Controller mit dem lokalen Netzwerk zu verbinden und schaltet die blaue LED auf dem D1 mini board ein.
+Per NTP holt sich der Controller die aktuelle Zeit, das aktuelle Datum und zeigt diese dann auch per MQTT im Topic cooler/status an.
+Wie auch bei vielen anderen Projekten im Makerspace nutzen wir den Task/Scheduler (a lightweight implementation of cooperative multitasking), da wir damit sehr gute Erfahrung gemacht haben. 
+Der Controller 'published' alle 15 Sekunden per MQTT folgende Werte in json-Format:
+{"revision":"0.8_240721",
+"enable_flag":1,
+"ip":"192.168.1.38",
+"rssi":-73,
+"cnt_reconnect":0,
+"temp":27.875,
+"client":"cooler_1",
+"alarm_delay":15,
+"analog_level":120,
+"ADC_Read":205,
+"eeprom_use":3,
+"last TS":"21.07.24 - 16:58:29"}

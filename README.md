@@ -60,8 +60,8 @@ Auch lassen sich verschiedene Betriebsparameter (Alarm-Delay, analog Level, wipe
 <br>Der Programm-Code kann per OTA (Over the air) auch aus der Ferne geändert aufgespielt werden.
 <br><br>
 Admins können auch Parameter per 'Publish' ändern:<br>
-Publish to <b>cooler/in</b>  i.e.<br>
-analog Level (0-1023) "{level:512}" or<br>
-delay time in seconds "{delay:15}"  or<br>
-enable_flag 0/1 "{enable:0}"  or<br>
+Publish nach <b>cooler/in</b>  z.B.<br>
+analog Level (0-1023) "{level:512}" oder<br>
+delay time in seconds "{delay:15}"  oder<br>
+enable_flag 0/1 "{enable:0}"  oder<br>
 wipe eeprom "{wipe:1}" 

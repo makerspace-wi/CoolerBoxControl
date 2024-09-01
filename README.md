@@ -58,4 +58,10 @@ Unter Topic cooler/doors wird der aktuelle Status der Verschlusstüren und der A
 Auch lassen sich verschiedene Betriebsparameter (Alarm-Delay, analog Level, wipe EEPROm und enable_flag) per MQTT setzen.
 <br>Zusätzlich gibt es einen Dallas 1-Wire Temperatursensor, dieser soll in die Kunststoffablaufkappe montiert werden, um die Kühlboxinnentemperatur zu erfassen.
 <br>Der Programm-Code kann per OTA (Over the air) auch aus der Ferne geändert aufgespielt werden.
-
+<br><br>
+Admins können auch Parameter per 'Publish' ändern:<br>
+Publish to <b>cooler/in</b>  i.e.<br>
+analog Level (0-1023) "{level:512}" or<br>
+delay time in seconds "{delay:15}"  or<br>
+enable_flag 0/1 "{enable:0}"  or<br>
+wipe eeprom "{wipe:1}" 
